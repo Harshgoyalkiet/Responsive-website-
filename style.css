@@ -1,0 +1,299 @@
+
+/* first of all css reset */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*
+{
+    margin:0px;
+    padding:0px;
+    font-family: 'Lusitana', serif;
+
+}
+html{
+    scroll-behavior:smooth;
+}
+
+
+
+/* navigation bar */
+.navbar
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:sticky;
+    top:0;
+    cursor:pointer;
+    /* height:470px; */
+}
+
+.navlist
+{
+    /* background-color:black; */
+    width:70%;
+    display:flex;
+    padding:20px;
+   align-items:center;
+
+
+}
+.navlist li
+{
+  list-style:none;
+  padding:20px;
+  font-size:20px;
+  
+
+}
+.navlist li a
+{
+   text-decoration:none;
+   color:white;
+}
+.navlist li a:hover{
+    background-color:pink;
+    font-weight:60;
+    /* font-family:fantasy; */
+}
+.rightnav
+{
+    width:30%;
+    /* background-color:black; */
+    text-align:right;
+    padding:30px;
+
+}
+.logo
+{
+    /* height:100px; */
+    width:20%;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+}
+.logo img{
+    width:33%;
+    border:3px solid white;
+    border-radius:50px;
+
+}
+.logo img :hover{
+    border:5px solid white;
+}
+#search
+{
+    padding:5px;
+    font-size:17px;
+    border:3px solid white;
+    border-radius:9px;
+}
+
+
+.background
+{
+    background:rgba(0, 0, 0, 0.7)  url('images/background1.jpg');
+    background-size:cover;
+    background-blend-mode:darken;
+
+}
+.dark{
+color:black;
+}
+
+.burger
+{
+position:absolute;
+cursor:pointer;
+right:5%;
+top:15px;
+display:none;
+/* iski display ko baad mein media queries ki madad se  chalu karenge */
+
+}
+.line
+{
+    width:33px;
+    background-color:white;
+    height:4px;
+    margin:3px 3px;
+
+}
+
+
+
+
+
+
+
+
+/* now handling our section after the navigation bar*/
+
+ .box-main
+
+ {
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    max-width:50%;
+    margin:auto;
+    height:60%;
+
+ }
+ .firstsection
+ {
+     height:100vh;
+
+
+ }
+ .firsthalf
+ {
+ width:80%;
+ justify-content:center;
+ /* align-items:center; */
+ display:flex;
+ flex-direction:column;
+}
+ .secondhalf
+{
+    width:30%;
+}
+.secondhalf img{
+
+    border: 4px solid white;
+    border-radius:250px;
+    padding: 4px 0px;
+    width: 85%;
+}
+.text-big
+{
+   font-size:x-large;
+   padding:15px;
+   margin:15px;
+   font-style:inherit;
+   /* font-family: 'Monoton', cursive; */
+   font-family: 'Permanent Marker', cursive;
+}
+.text-small
+{
+   padding:10px;
+   font-family: 'Great Vibes', cursive;
+   font-size:25px;
+}
+
+
+/* now we will style the buttons*/
+
+ .btn
+ {
+    border:2px solid white;
+    border-radius:17px;
+    padding:12px 12px;
+    margin:4px;
+    background:none;
+    cursor:pointer;
+    color:white;
+
+ }
+ .btn-sm{
+    border:2px solid white;
+    border-radius:17px;
+    padding:7px 12px;
+    margin:4px;
+    background:none;
+    cursor:pointer;
+    color:white;
+    vertical-align:middle; /* ise karne se kya hoga ki button bilkul center mein aajyega*/
+
+    
+
+ }
+
+
+ /* now next section */
+
+ .section
+ {
+     height:500px;
+     display:flex;
+     align-items:center;
+     justify-content:space-evenly;
+     margin:auto;
+     max-width:80%;
+     padding:20px;
+     /* background-color:black; */
+     
+ }
+ .left
+ {
+  flex-direction:row-reverse;
+ 
+ }
+ 
+
+ .thumbnail img
+ {
+     border:2px solid white;
+     border-radius:1000px;
+     justify-content: center;
+
+ }
+ 
+
+
+ /* newsection */
+
+
+ .contact
+
+ {
+
+    background-color:rgb(243, 227, 227);
+    height:900px;
+ }
+ .text-center
+ {
+
+    text-align:center;
+    padding:38px;
+    font-family: 'Lusitana', serif;
+ }
+ .form
+ {
+     max-width:800px;
+     margin: 32px  auto;
+
+     
+ }
+ .form-input
+ {
+     border:2px solid grey;
+     width:100%;
+     border-radius:6px;
+     font-size:19px;
+     margin:10px 0px;
+     padding:5px;
+}
+.btn-dark
+
+{
+    color:black;
+    border:2px solid grey;
+    width:100px;
+    padding:8px;
+    border-radius:8px;
+    vertical-align:middle;
+}
+
+
+/* footer */
+
+.text-footer{
+
+    text-align:center;
+    justify-content:center;
+    padding:30px 30px;
+    color:white;
+
+}
+ 

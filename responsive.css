@@ -1,0 +1,47 @@
+@media only screen and (max-width:1140px)
+{
+    .navlist
+    {
+        flex-direction:column;
+
+    }
+    .navbar
+    {
+        flex-direction:column;
+        transition:all 0.7s ease-out;
+        /* transition jo hai vo navbar mein isliye kam nahi kar raha kyonki navbar ki by default koi height nahi hai */
+        height:478px;
+    }
+    /* now ab baari aati hai right nav ko sahi karne ki */
+    .rightnav
+    {
+       text-align:center;
+
+    }
+    #search
+    {
+        width:100%;
+
+    }
+    .burger
+    {
+        display:block;
+
+    }
+    /* now navbar ki height ko set karne ke liye hum ek nayi class banayenge ismein  */
+    .h-nav-resp
+    {
+        height:72px;
+    }
+    /* now hum yahhan ek visibility class banayenge */
+    .v-class-resp
+    {
+           opacity:0;
+
+    }
+    /* now ab hamburger ban to gya hai but neeche tab girega jab hum ismein ek event listener laga denge */
+
+    /* now ye humnein jo v-calss banyi hain aur jo h-nav  class banayi hai wo uske aage hum resp aur laga denge kyonki wo humnein responsive banane ke liye banayi hai */
+
+
+}
